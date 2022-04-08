@@ -25,13 +25,21 @@ a {
 
 /* The navigation bar */
 
-.navbar {
-    padding: 1em;
-    font-family: 'Titrage2';
+#navbarwork {
     font-size: 2em;
-    overflow: hidden;
+}
+
+.navbar {
+    z-index: 9999;
+    width: 100vw;
+    color: rgb(210, 255, 232);
+    background-color: white;
+    padding: 10px;
+    font-family: 'Titrage2';
+    font-size: .6em;
     position: fixed;
-    color: transparent;
+    display: flex;
+    justify-content: space-between;
     /* Set the navbar to fixed position */
     top: 0;
     right: 0;
@@ -143,13 +151,26 @@ figcaption {
     background-color: black;
     color: white;
     font-family: 'Courant';
-    font-size: 2em;
-    padding: 20px;
+    font-size: 1.4em;
+    padding: 10px;
     opacity: 0;
 }
 
+#vide {
+    height: 400px;
+}
+
 figure:hover figcaption {
-    opacity: 10;
+    opacity: 1;
+}
+
+#captionlink {
+    color: white;
+    text-decoration: underline;
+}
+
+#captionlink:hover {
+    color: blue;
 }
 
 .image-grid-col-2 {
